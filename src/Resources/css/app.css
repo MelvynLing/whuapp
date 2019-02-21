@@ -128,7 +128,7 @@ button {
     top: 0;
     position: absolute;
     right: 0;
-    background: #98c6e9;
+    background: #1bb1e7;
     color: #ffffff;
     border: 1px solid white;
     padding: 10px;
@@ -205,6 +205,7 @@ footer .footer_discl {
 .featured_player {
     width: 500px;
     height: 500px;
+    background: url("../images/featured5.jpg");
     background-size: contain !important;
     background-repeat: no-repeat !important;
     position: absolute;
@@ -221,7 +222,7 @@ footer .footer_discl {
 
 .featured_second {
     position: absolute;
-    background: #0e1731;
+    background: #1bb1e7;
     color: #ffffff;
     font-size: 92px;
     text-transform: uppercase;
@@ -234,8 +235,9 @@ footer .footer_discl {
 
 .home_matches_wrapper {
     background: #1bb1e7;
-    margin-top:9px;
-    padding: 50px 0px;
+    padding: 100px 0px;
+    border-top: 7px solid #F3D459;
+    border-bottom: 7px solid #F3D459;
 }
 
 .home_matches_wrapper .home_matches {
@@ -259,8 +261,9 @@ footer .footer_discl {
 ===============================*/
 
 .match_block .match_date{
-    color:#ffffff;
+    color:#F3D459;
     font-size:18px;
+    font-weight: bold;
 }
 
 .match_block .match_wrapper .match_top,
@@ -295,12 +298,14 @@ footer .footer_discl {
 .match_block .match_wrapper .match_bottom .left .team_name {
     font-size: 30px;
     padding: 6px 10px;
+    color: black;
+    font-weight: 500;
 }
 
 
 .match_block .match_wrapper .match_top .right,
 .match_block .match_wrapper .match_bottom .right { 
-    background: #0e1731;
+    background: #801638;
     width: 70px;
     color: #ffffff;
     font-size: 50px;
@@ -310,7 +315,7 @@ footer .footer_discl {
 
 .match_box_big {
     width:100%;
-    border-bottom: 2px solid #98c6e9;
+    border-bottom: 2px solid #1bb1e7;
     padding: 20px;
     box-sizing: border-box;
     height: 143px;
@@ -320,7 +325,7 @@ footer .footer_discl {
 .match_box_big .block_wraper {
     display: inline-block;
     margin-right: 50px;
-    float: left;
+    /* float: left; */
 }
 
 .match_box_big .block {
@@ -346,7 +351,7 @@ footer .footer_discl {
 }
 
 .block_wraper.nfo {
-    border-left: 1px solid #98c6e9;
+    border-left: 1px solid #1bb1e7;
     height: 102px;
     padding-left: 10px;
     font-weight: 300;
@@ -359,7 +364,7 @@ footer .footer_discl {
 
 .match_filters {
      display: flex;
-     border-bottom: 1px solid #01285e;
+     border-bottom: 1px solid #801638;
      background: #dff1ff;
 }
 .match_filters .tag {
@@ -383,7 +388,7 @@ footer .footer_discl {
 
 .match_filters_box {
     padding: 10px 20px;
-    border-right: 1px solid #01285e;
+    border-right: 1px solid #801638;
     background: #dff1ff;
 }
 
@@ -392,14 +397,11 @@ footer .footer_discl {
 }
 
 
+
 /*=============================
             MATCHES BLOCK
 ===============================*/
 
-
-.home_meetplayers { 
-    background: #ffffff;
-}
 
 .home_meetplayers_wrapper {
     padding-bottom: 100px;
@@ -546,14 +548,14 @@ footer .footer_discl {
 }
 
 .league_table_wrapper {
-    border-left: 1px solid #98c6e9;
+    border-left: 1px solid #1bb1e7;
 }
 .league_table_wrapper .title {
     padding: 22px;
     font-size: 22px;
     color: #ffffff;
-    background: #98c6e9;
-    border-bottom: 1px solid #01285e;
+    background: #1bb1e7;
+    border-bottom: 1px solid #801638;
 }
 
 .the_matches_wrapper .progress {
@@ -576,7 +578,7 @@ footer .footer_discl {
 .admin_container .admin_left_nav {
     min-height: 100vh;
     background: #282828;
-    border-right: 2px solid #01285e;
+    border-right: 2px solid #801638;
 }
 
 .admin_container  .admin_right {
@@ -623,7 +625,7 @@ footer .footer_discl {
 .select_team_layout input[name=result_away_input] {
     width: 60px;
     text-align: center;
-    background: #98c6e9;
+    background: #1bb1e7;
     color: #ffffff;
 }
 
@@ -683,14 +685,14 @@ footer .footer_discl {
 
 .signin_wrapper h2 {
     font-family: 'Raleway', sans-serif;
-    color: #98c6e9;
+    color: #1bb1e7;
     font-size: 50px;
 }
 
 .user_dashboard {
     font-size: 60px;
     font-family: 'Raleway', sans-serif;
-    color: #d5ebfe;
+    color: #72b1c8;
     text-align: center;
     margin-top: 200px;
 }
