@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { easePolyOut } from 'd3-ease';
 import Animate from 'react-move/Animate';
 import Noble from '../../../Resources/images/players/noble.png';
+import PlayerCard from '../../ui/playerCard';
 
 class HomeCards extends Component {
 
@@ -9,15 +10,15 @@ class HomeCards extends Component {
           cards:[
                {
                     bottom:90,
-                    left:300
+                    left:225
                },
                {
                     bottom:60,
-                    left:200
+                    left:150
                },
                {
                     bottom:30,
-                    left:100
+                    left:75
                },
                {
                     bottom:0,
@@ -52,7 +53,12 @@ class HomeCards extends Component {
                                         bottom
                                    }}
                               >
-                                   wowow
+                                   <PlayerCard
+                                   number="16"
+                                   name="Mark"
+                                   lastname='Noble'
+                                   bck={Noble}
+                                   />
                               </div>
                          )
                     }}

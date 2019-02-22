@@ -19,10 +19,14 @@ const MatchesHome = () => {
 
             <Tag
                 bck='#ffffff'
-                size='22px'
                 color='#801638'
                 link={true}
                 linkto='/the_team'
+                add={{
+                    border: '3px solid #801638',
+                    fontWeight: "700",
+                    fontSize: '25px'
+                }}
             >
                 See More Matches
             </Tag>

@@ -45,7 +45,7 @@ input {
     font-size: 17px;
     padding: 8px;
     border-radius: 3px;
-    font-family: Roboto;
+    font-family: 'Raleway', sans-serif;
     font-weight: 300;
     width: 100%;
     box-sizing: border-box;
@@ -156,6 +156,7 @@ footer {
     font-size: 16px;
     color: #ffffff;
     padding: 30px 0px;
+    border-top: 7px solid #F3D459;
 }
 
 footer .img_cover{
@@ -216,7 +217,7 @@ footer .footer_discl {
     font-weight: 900;
     color: #ffffff;
     font-size: 92px;
-    text-transform: uppercase;
+    font-variant: small-caps;
     padding: 0px 20px;
 }
 
@@ -225,7 +226,7 @@ footer .footer_discl {
     background: #1bb1e7;
     color: #ffffff;
     font-size: 92px;
-    text-transform: uppercase;
+    font-variant: small-caps;
     padding: 0px 20px;
 }
 
@@ -441,14 +442,14 @@ footer .footer_discl {
     background-size: contain !important;
 }
 
-.player_card_wrapper .player_card_nfo {
+.player_card_wrapper .player_card_info {
     position: relative;
 }
 .player_card_wrapper .player_card_number {
-    color: #d6ecfe;
-    font-size: 185px;
+    color: #9EDBF5;
+    font-size: 100px;
     text-align: right;
-    line-height: 160px;
+    line-height: 105px;
 }
 
 .player_card_wrapper .player_card_name {
@@ -460,10 +461,12 @@ footer .footer_discl {
     display: block;
     font-size: 25px;
     color: #801638;
+    font-weight: 700;
 }
 
 .home_text_wrapper {
-    margin-top: 70px;
+    margin-top: 90px;
+    text-align: center;
 }
 
 
@@ -473,6 +476,7 @@ footer .footer_discl {
 
 .promotion_wrapper {
     padding: 30px 0px 130px 0px;
+    border-top: 7px solid #F3D459
 }
 
 .promotion_wrapper .promotion_animation {
@@ -481,16 +485,19 @@ footer .footer_discl {
 }
 
 .promotion_wrapper .promotion_animation .left { 
-    text-transform: uppercase;
-    text-transform: uppercase;
-    font-size: 150px;
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 100px;
+    font-weight: 900;
     font-family: 'Raleway', sans-serif;
     flex-grow: 1;
-    color:#d5ebfd;
-    line-height: 135px;
+    color: #1bb1e7;
+    line-height: 110px;
+    
 }
 .promotion_wrapper .promotion_animation .left span {
-    display:block;
+    /* display: block; */
+    border-bottom: 2px solid #F3D459;
  }
 
 .promotion_wrapper .promotion_animation .right {
@@ -510,6 +517,7 @@ footer .footer_discl {
 .promotion_wrapper .enroll_title {
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
+    font-weight: 600;
     color: #4e4e4e;
 }
 
@@ -525,6 +533,7 @@ footer .footer_discl {
     width: 330px;
     margin: 0 auto;
     padding: 10px 0px;
+
 }
 
 /*=============================

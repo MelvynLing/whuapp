@@ -60,17 +60,18 @@ class MeetPlayers extends Component {
                               <Tag
                                    bck="#1bb1e7" 
                                    size="30px" 
-                                   color="#F3D459"
+                                   color="#801638"
                                    link={true}
                                    linkto="/the_team"
                                    add={{
                                              display:'inline-block',
                                              marginBottom: '40px',
-                                             border: '1px solid #801638',
-                                             fontWeight: "600px"
+                                             border: '3px solid #801638',
+                                             fontWeight: "700",
+                                             fontSize: '25px'
                                         }}
                               >
-                              See the first team here
+                              See the Starting Team here
                               </Tag>
                          </div>
                          </div>
