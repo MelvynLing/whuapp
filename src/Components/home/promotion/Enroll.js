@@ -125,7 +125,7 @@ submitForm(event) {
                                    :null 
                               }
                               <div className='success_label'>{this.state.formSuccess}</div>
-                              <button onClick={(event)=> this.submitForm(event)}>Sign Up</button>
+                              <button onClick={(event)=> this.submitForm(event)}> Enter to Win! </button>
                               <div className="enroll_discl">***PLEASE BE AWARE***<br/> There is no actual contest, these is just for coding practise/exercise.</div>
                          </div>
                     </form>

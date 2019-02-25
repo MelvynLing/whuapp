@@ -446,10 +446,11 @@ footer .footer_discl {
     position: relative;
 }
 .player_card_wrapper .player_card_number {
-    color: #9EDBF5;
+    color: #801638;
     font-size: 100px;
     text-align: right;
-    line-height: 105px;
+    line-height: 100px;
+    font-weight: 700;
 }
 
 .player_card_wrapper .player_card_name {
@@ -460,7 +461,7 @@ footer .footer_discl {
 .player_card_wrapper .player_card_name span { 
     display: block;
     font-size: 25px;
-    color: #801638;
+    color: #1bb1e7;
     font-weight: 700;
 }
 
