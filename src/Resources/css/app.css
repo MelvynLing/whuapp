@@ -581,14 +581,16 @@ footer .footer_discl {
 ===============================*/
 
 .admin_container {
-    margin-top: 96px;
+    margin-top: 89px;
     display:flex;
 }
 
 .admin_container .admin_left_nav {
     min-height: 100vh;
-    background: #282828;
-    border-right: 2px solid #801638;
+    background: #801638;
+    border-right: 7px solid #F3D459;
+    padding: 0px;
+    margin: 0px auto;
 }
 
 .admin_container  .admin_right {
@@ -611,7 +613,7 @@ footer .footer_discl {
 
 .admin_container h2 {
     margin: 0px 0px 50px 0px;
-    border-bottom: 1px solid #dbdbdb;
+    border-bottom: 5px solid #F3D459;
     color: #414141;
     font-size: 40px;
 }
@@ -701,8 +703,14 @@ footer .footer_discl {
 
 .user_dashboard {
     font-size: 60px;
+    font-weight: 700;
     font-family: 'Raleway', sans-serif;
-    color: #72b1c8;
+    color: #1bb1e7;
     text-align: center;
     margin-top: 200px;
+}
+
+
+table {
+    text-align: center
 }
