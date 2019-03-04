@@ -10,7 +10,6 @@ import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import CircularProgress from '@material-ui/core/CircularProgress';
 
-
 import { firebaseMatches } from '../../../firebase';
 import { firebaseLooper, reversedArray } from '../../ui/misc';
 
@@ -39,14 +38,16 @@ class AdminMatches extends Component {
         <div>
 
           <Paper>
+
             <Table>
               <TableHead>
                 <TableRow>
 
-                  <TableCell><strong>Date</strong></TableCell>
-                  <TableCell><strong>Match (Home - Away)</strong></TableCell>
-                  <TableCell><strong>Result</strong></TableCell>
-                  <TableCell><strong>Final</strong></TableCell>
+                  <TableCell className='matches_tablerow'><strong>Date</strong></TableCell>
+                  <TableCell className='matches_tablerow'><strong>Match<br/>(Home - Away)</strong></TableCell>
+                  {/* <TableCell className='matches_tablerow'><strong>Score</strong></TableCell> */}
+                  <TableCell className='matches_tablerow'><strong>Result<br/>(Win, Loss, or Draw)</strong></TableCell>
+                  <TableCell className='matches_tablerow'><strong>Final</strong></TableCell>
 
                 </TableRow>  
               </TableHead>
@@ -55,21 +56,30 @@ class AdminMatches extends Component {
                   this.state.matches ?
                     this.state.matches.map((match,i)=>(
                       <TableRow key={i}>
-                        <TableCell>
+                        <TableCell align="center" className='tableCell'>
                           {match.date}
                         </TableCell>
-                        <TableCell>
+                        <TableCell align="center" className='tableCell'>
                           <Link to={`/admin_matches/edit_match/${match.id}`}>
-                            {match.local} <strong> - </strong> {match.away}
+                            {match.local} <strong> - </strong> {match.away} 
+                            <br/>
+                            {match.resultLocal} <strong> - </strong> {match.resultAway}
                           </Link>
                         </TableCell>
-                        <TableCell>
+                        {/* <TableCell align="center" className='tableCell'>
                         {match.resultLocal} <strong> - </strong> {match.resultAway}
+                        </TableCell> */}
+                        <TableCell align="center" className='tableCell'>
+                          {match.result === 'W' ? <span className="matches_tag_green">Win</span>
+                          : match.result === 'L' ? <span className="matches_tag_red">Loss</span>
+                          : match.result === 'D' ? <span><strong>Draw</strong></span>
+                          : <span><strong>N/A</strong></span>
+                            }
                         </TableCell>
-                        <TableCell>
+                        <TableCell align="center" className='tableCell'>
                           {
                             match.final === 'Yes' ?
-                              <span className="matches_tag_red">Final</span>
+                              <span className="matches_tag_red">Final Score</span>
                               :
                               <span className="matches_tag_green">Not Played Yet</span>
                           }

@@ -6,7 +6,7 @@ const Dashboard = () => {
           <AdminLayout>
                <div className='user_dashboard'>
                     <div>
-                         This is your dash hash crash mash bash flash stache  bash - board
+                         This is your dashboard
                     </div>
                     
                </div>

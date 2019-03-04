@@ -17,6 +17,8 @@ a {
     color: inherit;
 }
 
+
+
 .link_logo {
     display: inline-block;
 }
@@ -40,23 +42,28 @@ a {
 }
 
 input {
-    background: #fafafa;
-    border: 1px solid #e9e9e9;
+    background: rgb(238, 249, 253);
+    color: #801638;
+    border: 1px solid #F3D459;
     font-size: 17px;
     padding: 8px;
     border-radius: 3px;
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
-    width: 100%;
+    width: 75%;
     box-sizing: border-box;
 }
 
 select {
-    font-size: 16px;
-    height: 38px;
-    border: 1px solid #e9e9e9;
+    background: rgb(238, 249, 253);
+    color: #801638;
+    border: 1px solid #F3D459;
+    font-size: 17px;
+    padding: 8px;
     border-radius: 3px;
-    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    width: 75%;
 }
 
 
@@ -83,10 +90,13 @@ button {
 }
 
 .label_inputs {
+    color: #ffffff;
+    border-radius: 5px;
+    border: 0.5px solid #F3D459;
     font-size: 20px;
     margin: 10px 0px;
-    font-weight: 300;
-    background: #e5f4ff;
+    font-weight: 700;
+    background: #1bb1e7;
     padding: 10px;
     display: inline-block;
 }
@@ -94,7 +104,7 @@ button {
 .split_fields {
     margin: 30px 0px;
     padding: 20px 0px;
-    border-top: 2px solid #dddddd;
+    border-top: 5px solid #F3D459;
 }
 
 .split_fields.last {
@@ -130,8 +140,10 @@ button {
     right: 0;
     background: #1bb1e7;
     color: #ffffff;
-    border: 1px solid white;
+    border: 1px solid #F3D459;
+    border-radius: 5px;
     padding: 10px;
+    font-weight: 700
 }
 
 .not_found_container {
@@ -595,27 +607,55 @@ footer .footer_discl {
 
 .admin_container  .admin_right {
     flex-grow: 1;
+    background: #ffffff;
 }
 .admin_container  .admin_progress {
     text-align: center;
     margin: 20px 0px;
 }
 
+.admin_container .matches_tablerow {
+    font-weight: 500;
+    color: #ffffff;
+    font-size:20px;
+    font-family: 'raleway', sans-serif;
+    text-align: center;
+    border-bottom: 5px solid #F3D459;
+    background-color: #801638;
+    padding-top: 10px;
+    padding-bottom: 10px;   
+}
+
+.admin_container .tableCell {
+    color: #353535;
+    font-size:15px;
+    font-family: 'raleway', sans-serif;
+    border-bottom: 0.5px solid #F3D459 !important;
+}
+
 .admin_container .matches_tag_red {
     font-weight: 700;
-    color: #F44336;
+    color: rgb(212, 63, 52);
 }
 
 .admin_container .matches_tag_green {
     font-weight: 700;
-    color: #4CAF50;
+    color: rgb(93, 196, 97);
 }
 
 .admin_container h2 {
+    text-align: center;
     margin: 0px 0px 50px 0px;
-    border-bottom: 5px solid #F3D459;
-    color: #414141;
+    background: #801638;
+    border: 5px solid #F3D459;
+    border-radius: 15px;
+    color: #ffffff;
     font-size: 40px;
+    font-variant: small-caps;
+    padding: 15px;
+    margin: 0px auto;
+    width:50%;
+    margin: 30px auto;    
 }
 
 .editmatch_dialog_wrapper,
@@ -624,7 +664,6 @@ footer .footer_discl {
     width: 480px;
 }
 
- 
 .select_team_layout .wrapper{
     display: flex;
 }
@@ -644,7 +683,7 @@ footer .footer_discl {
 .admin_submit button {
     font-size: 20px;
     margin: 40px 0px;
-    background: #009688;
+    background: #801638;
 }
 
 /*=============================

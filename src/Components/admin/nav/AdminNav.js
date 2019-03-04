@@ -27,8 +27,8 @@ const AdminNav = () => {
      const style = {
           color: '#ffffff',
           fontWeight: '700',
-          textAlight: 'center',
-          borderBottom: '2px solid #F3D459',
+          align: 'center',
+          borderBottom: '0.5px solid #F3D459',
      }
      
      const renderItems = () => (
