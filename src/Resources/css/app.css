@@ -154,9 +154,12 @@ button {
     min-height: 100vh;
     text-align: center;
     font-size: 90px;
+    font-weight: 900;
     font-family: 'Raleway', sans-serif;
-    color: #d5ebfe;
+    color: #1bb1e7;
 }
+
+
 
 
 /*=============================
@@ -303,8 +306,8 @@ footer .footer_discl {
 
 .match_block .match_wrapper .match_top .left .icon,
 .match_block .match_wrapper .match_bottom .left .icon {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     background-size: cover !important;
 }
 .match_block .match_wrapper .match_top .left .team_name,
@@ -324,11 +327,13 @@ footer .footer_discl {
     font-size: 50px;
     text-align: center;
     padding-top: 6px;
+    font-weight: 900
 } 
 
 .match_box_big {
     width:100%;
-    border-bottom: 2px solid #1bb1e7;
+    border-bottom: 5px solid #F3D459;
+    background: #801638;
     padding: 20px;
     box-sizing: border-box;
     height: 143px;
@@ -338,7 +343,8 @@ footer .footer_discl {
 .match_box_big .block_wraper {
     display: inline-block;
     margin-right: 50px;
-    /* float: left; */
+    float: left; 
+    color: #ffffff;
 }
 
 .match_box_big .block {
@@ -346,8 +352,8 @@ footer .footer_discl {
 }
 
 .match_box_big .icon{
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     background-size: cover !important;
 }
 
@@ -364,26 +370,29 @@ footer .footer_discl {
 }
 
 .block_wraper.nfo {
-    border-left: 1px solid #1bb1e7;
+    border-left: 5px solid #1bb1e7;
     height: 102px;
     padding-left: 10px;
-    font-weight: 300;
-    color: #5e5e5e;
+    
+
+    color: #ffffff;
 }
 
 .block_wraper.nfo div {
     margin: 5px 0px;
+    
 }
 
 .match_filters {
      display: flex;
-     border-bottom: 1px solid #801638;
-     background: #dff1ff;
+     border-bottom: 5px solid #F3D459;
+     background: #801638;
 }
 .match_filters .tag {
     font-weight: 300;
     margin-bottom: 5px;
-    color: #656565;
+    color: #ffffff;
+    font-weight: 900
 }
 .match_filters .option {
     background: #ffffff;
@@ -395,14 +404,14 @@ footer .footer_discl {
 }
 
 .match_filters .option.active {
-    background: #62a2d3;
+    background: #1bb1e7;
     color: #fff;
 }
 
 .match_filters_box {
     padding: 10px 20px;
-    border-right: 1px solid #801638;
-    background: #dff1ff;
+    border-right: 5px solid #F3D459;
+    background: #801638;
 }
 
 .match_filters .cont {
@@ -554,7 +563,7 @@ footer .footer_discl {
 ===============================*/
 
 .the_matches_container {
-    margin-top: 96px;
+    margin-top: 91px;
 }
 
 .the_matches_wrapper {
@@ -566,18 +575,21 @@ footer .footer_discl {
 }
 
 .the_matches_wrapper .right {
-   width:400px;
+    text-align: center;
 }
 
 .league_table_wrapper {
-    border-left: 1px solid #1bb1e7;
+    border-left: 5px solid #F3D459;
+    border-right: 5px solid #F3D459;
 }
 .league_table_wrapper .title {
     padding: 22px;
     font-size: 22px;
+    font-weight: 900;
+    font-variant: small-caps;
     color: #ffffff;
-    background: #1bb1e7;
-    border-bottom: 1px solid #801638;
+    background: #801638;
+    border-bottom: 5px solid #F3D459;
 }
 
 .the_matches_wrapper .progress {

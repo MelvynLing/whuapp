@@ -264,11 +264,11 @@ class AddEditMatch extends Component {
           }
 
           this.state.teams.forEach((team)=>{
-               if(team.shortName=dataToSubmit.local){
+               if(team.shortName===dataToSubmit.local){
                     dataToSubmit['localThmb'] = team.thmb
 
                }
-               if(team.shortName=dataToSubmit.away){
+               if(team.shortName===dataToSubmit.away){
                     dataToSubmit['awayThmb'] = team.thmb
 
                }
