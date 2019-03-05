@@ -691,7 +691,7 @@ footer .footer_discl {
 ===============================*/
 
 .the_team_container {
-    margin-top: 96px;
+    margin-top: 90px;
     padding: 20px;
     background-size: 5px 5px !important;
     min-height:100vh;
@@ -699,9 +699,17 @@ footer .footer_discl {
 
 .team_category_wrapper .title {
     font-size: 90px;
+    font-weight: 900;
     margin: 30px 0px;
     font-family: 'Raleway', sans-serif;
-    color: #d5ebfe;
+    color: #ffffff;
+    background: #801638;
+    border: 5px solid #F3D459;
+    border-radius: 20px;
+    padding: 20px 35px;
+    display: inline-block;
+    font-variant: small-caps;
+    
 }
 
 .team_category_wrapper .team_cards {

@@ -1,24 +1,114 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import PlayerCard from '../ui/playerCard';
+import Fade from 'react-reveal/Fade'
 
-export default class TheTeam extends Component {
+import Stripes from '../../Resources/images/stripes1.png';
+import { firebasePlayers, firebase } from '../../firebase';
+import { firebaseLooper } from '../ui/misc';
+import { Promise } from 'core-js';
+
+class TheTeam extends Component {
+  state = {
+    loading: true,
+    player:[]
+  }
+
+  componentDidMount() {
+    firebasePlayers.once('value').then(snapshot => {
+      const players= firebaseLooper(snapshot)
+
+      let promises = [];
+      for (let key in players) {
+        promises.push(
+          new Promise((resolve,reject)=>{
+            firebase.storage().ref('players')
+            .child(players[key].image).getDownloadURL()
+            .then(url => {
+              players[key].url = url;
+              resolve();
+            })
+          })
+        )
+      }
+
+      Promise.all(promises).then(()=>{
+        this.setState({
+          loading: false,
+          players
+        })
+      })
+
+
+    })
+  }
+
+  showplayersByCategory = (category) => (
+    this.state.players ?
+      this.state.players.map((player,i)=>{
+        return player.position === category ?
+          <Fade left delay={i*30} key={i}>
+            <div className="item">
+              <PlayerCard
+                number={player.number}
+                name={player.name}
+                lastname={player.lastname}
+                bck={player.url}
+              />
+            </div>
+          </Fade>
+        :null
+      })
+    :null
+  )
+
+  
+
   render() {
+
+ 
     return (
-      <div>
-           <br/>
-           <br/>                     
-           <br/>           
-           <br/>           
-           <br/> 
-           <br/>            
-           <br/>          
-           <br/>
-           <br/>
-           <br/>
-           <br/>
-           <br/>
-        THE TEAM
-        <br/>!222
+      <div className="the_team_container"
+        style={{
+           background:`url(${Stripes}) repeat`
+        }}
+      >
+      { !this.state.loading ?
+          <div>
+            <div className='team_category_wrapper'>
+              <div className='title'>Keepers</div>
+              <div className='team_cards'>
+                {this.showplayersByCategory('Keeper')}
+              </div>
+            </div>
+
+            <div className='team_category_wrapper'>
+              <div className='title'>Defenders</div>
+              <div className='team_cards'>
+                {this.showplayersByCategory('Defence')}
+              </div>
+            </div>
+
+            <div className='team_category_wrapper'>
+              <div className='title'>Midfielders</div>
+              <div className='team_cards'>
+                {this.showplayersByCategory('Midfield')}
+              </div>
+            </div>
+
+            <div className='team_category_wrapper'>
+              <div className='title'>Forward</div>
+              <div className='team_cards'>
+                {this.showplayersByCategory('Forward')}
+              </div>
+            </div>
+          </div>
+        :null
+      }
+
+
       </div>
     )
   }
 }
+
+export default TheTeam;
