@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import CircularProgress from '@material-ui/core/CircularProgress'
 
 import { firebaseMatches } from '../../firebase';
 import { firebaseLooper, reversedArray } from '../ui/misc';
